@@ -1354,7 +1354,7 @@
                 "\n---\n"
             ].join('');
 
-            var b_content = md_title_c + ">最近修改日期：" + _date + "  \r\r\n" + post_c;
+            var b_content = md_title_c + "> 最近修改日期：" + _date + "  \n" + post_c;
             var base64_content = btoaUnicode(b_content);
 
             fetch(`https://api.github.com/repos/${owner}/${repo}/contents/_posts/${_file_name}`, {
@@ -2122,5 +2122,6 @@
 
 
 </script>
+
 
 </html>
